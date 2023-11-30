@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taco UP</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <button id="back-to-top-btn"><img src="img/subir.png" style="width: 40px; height: 40px;"></button>
+    <script>
+        // Obtener el botón
+        var btn = document.getElementById("back-to-top-btn");
+      
+        // Cuando el usuario desplaza la página 20px desde la parte superior, mostrar el botón
+        window.onscroll = function() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            btn.style.display = "block";
+          } else {
+            btn.style.display = "none";
+          }
+        };
+      
+        // Cuando el usuario hace clic en el botón, volver al principio de la página
+        btn.onclick = function() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        };
+      </script>
+
+    <div id="navbar">
+        <div id="contenido">
+            <nav id="bars">
+                <a href="index.html"><img src="img/logo.jpeg" alt=""></a>
+                <ul>
+                    <li><a href="#mision-vision"> Misión y Visión</a></li>
+                    <li><a href="#Menu">Menú</a></li>
+                    <li><a href="#location">Ubicación</a></li>
+                    <li><a href="#">Conocenos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <h1 id="TacoUP">TACO UP</h1>
+    <section id="mision-vision">
+        <div class="title_section">
+            <h1>MISIÓN</h1>
+            <p>En Tacos UP, nuestra misión es ser la opción culinaria preferida para la comunidad universitaria, ofreciendo experiencias gastronómicas excepcionales a través de la excelencia en la preparación de tacos y una variedad de platillos auténticos. Nos esforzamos por crear un ambiente acogedor y vibrante que fomente la conexión entre estudiantes, profesores y visitantes, convirtiendo a Tacos UP en el corazón gastronómico de la comunidad universitaria.
+                <br> <br>
+            Buscamos satisfacer los paladares más exigentes, brindando productos frescos y de alta calidad, preparados con pasión y creatividad. Nos comprometemos a mantener estándares de higiene y seguridad alimentaria impecables, garantizando la confianza de nuestros clientes en cada bocado que disfrutan.</p>
+        </div>
+        <div class="title_section">
+            <h1>VISIÓN</h1>
+            <p>En Tacos UP, visualizamos un espacio donde la diversidad culinaria se encuentra con la calidez humana, creando momentos memorables para cada miembro de la comunidad universitaria. Aspiramos a ser reconocidos como el lugar emblemático donde los sabores auténticos se encuentran con la innovación, ofreciendo no solo comida excepcional, sino también un ambiente que inspire la creatividad, la camaradería y el intercambio cultural.
+                <br><br>
+            En Tacos UP, nuestra visión va más allá de ser simplemente un lugar para comer; queremos ser parte integral de la experiencia universitaria, contribuyendo al bienestar y la felicidad de todos aquellos que eligen compartir sus momentos especiales con nosotros.
+        <br>
+    <br></p>
+        </div>
+    </section>
+
+    <section id="Menu">
+        <h1>MENÚ</h1>
+    <div id="menu-complete">
+        <div class="card">
+            <div class="face front">
+                <img src="img/tacos.jpg" alt="">
+                <h3>Tacos</h3>
+            </div>
+            <div class="face back">
+                <h3>Tacos</h3>
+                <p>Guisos: Asada, Pastor, Surtida, Masciza, Campechano, Alambre.</p>
+                <p class="price">Precio por unidad: $13</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="face front">
+                <img src="img/chilaquiles.webp" alt="">
+                <h3>Chilaquiles</h3>
+            </div>
+            <div class="face back">
+                <h3>Chilaquiles</h3>
+                <p>Guisos: Asada, Pastor, Alambre, Masciza, Surtida, Pollo, Tinga.</p>
+                <p class="price">Precio por unidad: $50</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="face front">
+                <img src="img/hambuerguesas.webp" alt="">
+                <h3>Hamburguesa</h3>
+            </div>
+            <div class="face back">
+                <h3>Hamburguesa</h3>
+                <p>Carnes: Pastor, Asada, Pollo.</p>
+                <p class="price">Precio por unidad: $50</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="face front">
+                <img src="img/quesadillas.jpg" alt="">
+                <h3>Quesadillas</h3>
+            </div>
+            <div class="face back">
+                <h3>Quesadillas</h3>
+                <p>Guisos: Asada, Pastor, Surtida, Masciza, Campechano, Alambre.</p>
+                <p class="price">Precio por unidad: $25</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="face front">
+                <img src="img/burritos.avif" alt="">
+                <h3>Burritos</h3>
+            </div>
+            <div class="face back">
+                <h3>Burritos</h3>
+                <p>Guisos: Asada, Pastor, Surtida, Masciza, Campechano, Alambre.</p>
+                <p class="price">Precio por unidad: $35</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="face front">
+                <img src="img/gorditas.jpg" alt="">
+                <h3>Gorditas</h3>
+            </div>
+            <div class="face back">
+                <h3>Gorditas</h3>
+                <p>Guisos: Asada, Pastor, Surtida, Masciza, Campechano, Alambre.</p>
+                <p class="price">Precio por unidad: $15</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="face front">
+                <img src="img/p2.jpeg" alt="">
+                <h3>Pozol</h3>
+            </div>
+            <div class="face back">
+                <h3>Pozol</h3>
+                <p>Arrecho, Normal, Cacahuatado.</p>
+                <p class="price">Precio por unidad: $25</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="face front">
+                <img src="img/boingg.png" alt="">
+                <h3>Boing</h3>
+            </div>
+            <div class="face back">
+                <h3>Boing</h3>
+                <p>Mango, Fresa, Uva, Guayaba, Manzana, Naranja.</p>
+                <p class="price">Precio por unidad: $20</p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <h1 id="ubic">UBICACÍON</h1>
+    <section id="location">
+        <p>Nos ubicamos enfrente de la Universidad Politecnica de Chiapas ofreciendote la mejor calidad en cuanto a comida nos refiere.</p>
+        <div id="frame">
+            <img src="img/logo.jpeg" alt="">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238.95271407335397!2d-93.09071255422216!3d16.614547871605055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ed29fb0384a2eb%3A0x66ad5fa1ba50be15!2zQ2Fmw6kgVVA!5e0!3m2!1ses!2smx!4v1700748623394!5m2!1ses!2smx" width="700" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+</body>
+</html>

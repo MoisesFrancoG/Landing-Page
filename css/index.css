@@ -1,0 +1,221 @@
+* {
+    scroll-behavior: smooth;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#back-to-top-btn {
+    display: none; 
+    position: fixed;  
+    bottom: 20px; 
+    left: 20px; 
+    z-index: 99; 
+    font-size: 16px; 
+    border: none; 
+    outline: none; 
+    background-color:  rgb(12, 15, 169); 
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+#navbar {
+    width: 100%;
+	padding: 25px;
+	background-color: rgb(34, 31, 173);
+	box-sizing: border-box;
+    top: 0;
+}
+
+#navbar #contenido {
+	width: 60%;
+	display:flex;
+	justify-content: space-around;
+	margin: 0 auto;
+}
+#bars ul {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	width: 1000px;
+	justify-content: space-around;
+	padding: 0;
+	padding-left: 4px;
+}
+
+#bars ul li {
+    box-shadow: 0 0 10px black;
+    padding: 15px;
+    background-color: rgb(34, 31, 173);
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#bars ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#bars img {
+    width: 120px;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    border-radius: 100px
+}
+
+#bars ul li:hover {
+    background-color: aliceblue;
+    box-shadow: inset 0 0 10px black;
+    transition: 0.3s;
+    cursor: pointer;
+}
+#bars ul li:hover a {
+    color: black;
+}
+
+#mision-vision h1 {
+    text-align: center;
+}
+
+#mision-vision {
+    max-width: 80%;
+    margin: 2% auto;
+    padding-top: 20px;
+    display: flex;
+}
+
+.title_section {
+    box-shadow: 1px 2px 5px black;
+    width: 45%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.title_section p {
+    width: 80%;
+    margin: 0 auto;
+}
+#TacoUP {
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 0 2px 5px blue;
+
+}
+#Menu {
+    margin-top: 10%;
+    padding-top: 20px;
+}
+#Menu h1 {
+    text-align: center;
+    font-size: 40px;
+}
+#menu-complete {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px black;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    top: 82%;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3,35,54);
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px black;
+}
+
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back .price {
+    border-top: solid 1px white;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+#ubic {
+    text-align: center;
+    font-size: 40px;
+}
+
+#location p {
+    text-align: center;
+}
+
+#frame {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+#frame img {
+    width: 30%;
+    margin-left: 13%;
+    margin-right: 1%;
+}
